@@ -3,7 +3,7 @@ import Header from './components/Header';
 import Home from './pages/Home';
 import { links } from './constants/links';
 import logo from './assets/iconnectLogo.jpeg'
-import './App.css';
+import './index.scss';
 
 function App() {
   const [currentTab, setCurrentTab] = useState(links[0]);
@@ -13,7 +13,7 @@ function App() {
     <div className="background">
       <Header setCurrentTab={setCurrentTab} selected={currentTab} />
       <div className='container'>
-        <img className='logo' src={logo} />
+        <img className='logo' alt='iconnect logo' src={logo} />
         <div className='overlay'>{overlayText}</div>
         <Home />
       </div>
