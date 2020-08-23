@@ -1,7 +1,7 @@
 import React from 'react';
 
-function BulletList(props) {
-  const { title, points } = props;
+function BulletList({content}) {
+  const { title, points } = content;
   return (
     <>
       <h2>{title}</h2>

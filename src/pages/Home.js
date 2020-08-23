@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import ImgSection from '../components/ImgSection';
 import BulletList from '../components/BulletList';
+import confused from '../assets/confused.jpg'
 
 const letUsShop = {
   title: 'Let us do the shopping for you',
@@ -56,8 +57,37 @@ function Home() {
       <p><p className='emphasize'>iConnect</p> offers a one stop complete solution for your electronic needs
         We carry a wide range of popular brands at very competitive pricing.
       </p>
-      <BulletList title={letUsShop.title} points={letUsShop.points} />
-
+      <BulletList content={letUsShop} />
+      <section>
+        <h2>Call or text <a href="tel:647-955-8399">647-955-8399</a></h2>
+        <p>Free over the phone quotes <br/>An in-home quote is  $149 and is credited towards any booked work</p>
+        <a href = "mailto: lu@iconnectht.com">lu@iconnectht.com</a>
+      </section>
+      <BulletList content={aLittleAboutUs} />
+      <BulletList content={projectorInstall} />
+      {/* Carousel here */}
+      <section>
+        <h2>Troubleshooting/service call</h2>
+        <p>Audio video,computer and wireless networking<br/>$149 for the first hour and $50 perhalf hour afterwards</p>
+        <img src={confused} alt='confused about which wire does what'/>
+      </section>
+      {/* Carousel here */}
+      <BulletList content={rates} />
+      <section>
+        <h2>*Lifetime warranty on the labor*</h2>
+        <p>Free over the phone quotes</p>
+        <a href="tel:647-955-8399">647-955-8399</a>
+        <a href = "mailto: lu@iconnectht.com">lu@iconnectht.com</a>
+      </section>
+      <section>
+        <h2>Certifications</h2>
+        <p>We accept Visa , Mastercard and American Express. <br/>Click below for payment</p>
+        <p>Scarborough Home Theatre Services - Toronto Electronics Installations</p>
+        <a href="tel:647-955-8399">647-955-8399</a>
+        <a href = "mailto: lu@iconnectht.com">lu@iconnectht.com</a>
+      </section>
+      {/* Secure Paymentrs button */}
+      {/* Carousel */}
     </div>
   );
 }
