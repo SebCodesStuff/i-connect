@@ -1,6 +1,18 @@
 import React, { useState } from 'react';
+import {
+  BrowserRouter as Router,
+  Switch,
+  Route,
+  Link
+} from "react-router-dom";
 import Header from './components/Header';
+import Calibration from './pages/Calibration';
+import ContactUs from './pages/ContactUs';
 import Home from './pages/Home';
+import Install from './pages/Install';
+import Stereo from './pages/Stereo';
+
+
 import { links } from './constants/links';
 import logo from './assets/iconnectLogo.jpeg'
 import './index.scss';
@@ -10,14 +22,32 @@ function App() {
   const overlayText = 'OVER 30 YEARS OF EXPERIENCE WITH EXCEPTIONAL SERVICE.'
 
   return (
-    <div className="background">
-      <Header setCurrentTab={setCurrentTab} selected={currentTab} />
-      <div className='container'>
-        <img className='logo' alt='iconnect logo' src={logo} />
-        <div className='overlay'>{overlayText}</div>
-        <Home />
+    <Router>
+      <div className="background">
+        <Header setCurrentTab={setCurrentTab} selected={currentTab} />
+        <div className='container'>
+          <img className='logo' alt='iconnect logo' src={logo} />
+          <div className='overlay'>{overlayText}</div>
+          <Switch>
+            <Route path="/tv-install-packages">
+              <Install />
+            </Route>
+            <Route path="/home-stereo-set-up">
+              <Stereo />
+            </Route>
+            <Route path="/TV-CALIBRATION">
+              <Calibration />
+            </Route>
+            <Route path="/contact-us">
+              <ContactUs />
+            </Route>
+            <Route path="/">
+              <Home />
+            </Route>
+          </Switch>
+        </div>
       </div>
-    </div>
+    </Router>
   );
 }
 
