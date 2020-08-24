@@ -1,6 +1,7 @@
-import React, { useState } from 'react';
+import React from 'react';
 import ImgSection from '../components/ImgSection';
 import BulletList from '../components/BulletList';
+import CarouselComp from '../components/Carousel';
 import confused from '../assets/confused.jpg'
 
 const letUsShop = {
@@ -65,7 +66,7 @@ function Home() {
       </section>
       <BulletList content={aLittleAboutUs} />
       <BulletList content={projectorInstall} />
-      {/* Carousel here */}
+      <CarouselComp />
       <section>
         <h2>Troubleshooting/service call</h2>
         <p>Audio video,computer and wireless networking<br/>$149 for the first hour and $50 perhalf hour afterwards</p>

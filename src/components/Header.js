@@ -1,16 +1,20 @@
 import React from 'react';
 import { links } from '../constants/links';
-import { Link } from "react-router-dom";
+import { Link, useLocation } from "react-router-dom";
 
-function Header(props) {
-  const { setCurrentTab, selected } = props;
+function Header () {
+  const { pathname } = useLocation();
   const renderLinks = (links) => {
     return links.map(link => {
       const { title, url } = link;
-      const active = selected === link;
+      const active = pathname === url;
       const activeClass = active ? '-active' : '';
       return (
-      <Link className={`links${activeClass}`} to={url} onClick={() => setCurrentTab(link)} >
+      <Link
+        className={`links${activeClass}`}
+        to={url}
+        key={url}
+      >
         {title}
       </Link>
       );

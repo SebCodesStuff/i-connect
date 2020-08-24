@@ -9,7 +9,7 @@ function ImgSection() {
       <div className="ImgSection">
         {paths.map(obj => {
           const { path, alt } = obj;
-          return <img src={path} alt={alt} />
+          return <img src={path} alt={alt} key={path} />
         })}
       </div>
       <p>More Brands Available</p>
