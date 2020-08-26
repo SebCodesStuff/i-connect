@@ -1,22 +1,28 @@
 import React from 'react';
 import { Carousel } from 'react-responsive-carousel';
-import logo from '../assets/iconnectLogo.jpeg'
-import confused from '../assets/confused.jpg'
 import "react-responsive-carousel/lib/styles/carousel.min.css";
 
-function CarouselComp (props) {
+function CarouselComp ({ images, width = 80 }) {
   return (
     <div>
-      {console.log(CarouselComp)}
-      <Carousel showArrows={true} >
+      <Carousel 
+        showArrows={true}
+        dynamicHeight={true}
+        autoPlay={true}
+        useKeyboardArrows={true}
+        swipeable={true}
+        thumbWidth={width}
+        infiniteLoop={true}
+        stopOnHover={true}
+      >
+      {images.map(url => {
+        const getAlt = url.split('.')[0]
+        return (
         <div>
-            <img src={logo} />
-            <p className="legend">Legend 1</p>
+            <img src={url}  alt={getAlt}/>
         </div>
-        <div>
-            <img src={confused} />
-            <p className="legend">Legend 2</p>
-        </div>
+        );
+      })}
       </Carousel>
     </div>
   );

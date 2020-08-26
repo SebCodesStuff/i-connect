@@ -2,7 +2,8 @@ import React from 'react';
 import ImgSection from '../components/ImgSection';
 import BulletList from '../components/BulletList';
 import CarouselComp from '../components/Carousel';
-import confused from '../assets/confused.jpg'
+import confused from '../assets/confused.jpg';
+import { images1, images2, images3 } from '../constants/carousels';
 
 const letUsShop = {
   title: 'Let us do the shopping for you',
@@ -66,13 +67,13 @@ function Home() {
       </section>
       <BulletList content={aLittleAboutUs} />
       <BulletList content={projectorInstall} />
-      <CarouselComp />
+      <CarouselComp images={images1} />
       <section>
         <h2>Troubleshooting/service call</h2>
         <p>Audio video,computer and wireless networking<br/>$149 for the first hour and $50 perhalf hour afterwards</p>
         <img src={confused} alt='confused about which wire does what'/>
       </section>
-      {/* Carousel here */}
+      <CarouselComp images={images2} />
       <BulletList content={rates} />
       <section>
         <h2>*Lifetime warranty on the labor*</h2>
@@ -87,8 +88,8 @@ function Home() {
         <a href="tel:647-955-8399">647-955-8399</a>
         <a href = "mailto: lu@iconnectht.com">lu@iconnectht.com</a>
       </section>
-      {/* Secure Paymentrs button */}
-      {/* Carousel */}
+      {/* Secure Payments button */}
+      <CarouselComp images={images3} width={50}/>
     </div>
   );
 }
