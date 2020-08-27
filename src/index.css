@@ -1,21 +1,41 @@
+h1, h2, h3, h4, h5, p, a, div {
+  font-family: 'Montserrat', sans-serif;
+  text-decoration: none; }
+
+a {
+  color: black;
+  cursor: pointer; }
+
+a:hover {
+  color: #fc0f13; }
+
+h1 {
+  font-weight: 400;
+  text-align: center; }
+
+.email {
+  text-decoration: underline;
+  color: black; }
+
 .background {
-  background-color: #222222;
+  background-color: #2d2c2a;
   display: flex;
   align-items: center;
   flex-direction: column;
   padding-bottom: 40px; }
-  .background .header {
-    width: 60vw;
-    color: #fc0f13;
-    background-color: #222222; }
 
-h1 {
-  text-align: center; }
+.background .header {
+  width: 60vw;
+  color: #fc0f13;
+  background-color: #2d2c2a; }
 
 .header-number {
   color: #ffffff;
   display: flex;
   justify-content: center; }
+
+.header-number:hover {
+  color: #fc0f13; }
 
 .container {
   width: 80vw;

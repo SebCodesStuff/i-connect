@@ -8,7 +8,6 @@ function CarouselComp ({ images, width = 80 }) {
       <Carousel 
         showArrows={true}
         dynamicHeight={true}
-        autoPlay={true}
         useKeyboardArrows={true}
         swipeable={true}
         thumbWidth={width}

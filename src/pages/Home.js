@@ -63,7 +63,7 @@ function Home() {
       <section>
         <h2>Call or text <a href="tel:647-955-8399">647-955-8399</a></h2>
         <p>Free over the phone quotes <br/>An in-home quote is  $149 and is credited towards any booked work</p>
-        <a href = "mailto: lu@iconnectht.com">lu@iconnectht.com</a>
+        <a className="email" href="mailto: lu@iconnectht.com">lu@iconnectht.com</a>
       </section>
       <BulletList content={aLittleAboutUs} />
       <BulletList content={projectorInstall} />
@@ -79,14 +79,14 @@ function Home() {
         <h2>*Lifetime warranty on the labor*</h2>
         <p>Free over the phone quotes</p>
         <a href="tel:647-955-8399">647-955-8399</a>
-        <a href = "mailto: lu@iconnectht.com">lu@iconnectht.com</a>
+        <a className="email" href="mailto: lu@iconnectht.com">lu@iconnectht.com</a>
       </section>
       <section>
         <h2>Certifications</h2>
         <p>We accept Visa , Mastercard and American Express. <br/>Click below for payment</p>
         <p>Scarborough Home Theatre Services - Toronto Electronics Installations</p>
         <a href="tel:647-955-8399">647-955-8399</a>
-        <a href = "mailto: lu@iconnectht.com">lu@iconnectht.com</a>
+        <a className="email" href="mailto: lu@iconnectht.com">lu@iconnectht.com</a>
       </section>
       {/* Secure Payments button */}
       <CarouselComp images={images3} width={50}/>
