@@ -22,13 +22,20 @@ function Header () {
   }
 
   return (
-    <div className="header">
-      <h1>iConnect We Service Toronto and the GTA</h1>
-      <a className='header-number' href="tel:647-955-8399">647-955-8399</a>
-      <div className="link-container">
-        {renderLinks(links)}
+    <>
+      <div className="header">
+        <div className="header--container">
+          <h1>iConnect We Service Toronto and the GTA</h1>
+          <a className='header-number' href="tel:647-955-8399">647-955-8399</a>
+
+        </div>
       </div>
-    </div>
+      <div className="link--background">
+        <div className="link--container">
+          {renderLinks(links)}
+        </div>
+      </div>
+    </>
   );
 }
 

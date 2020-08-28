@@ -11,7 +11,6 @@ import Home from './pages/Home';
 import Install from './pages/Install';
 import Stereo from './pages/Stereo';
 import logo from './assets/iconnectLogo.jpeg'
-import './index.scss';
 
 function App () {
   const overlayText = 'OVER 30 YEARS OF EXPERIENCE WITH EXCEPTIONAL SERVICE.'

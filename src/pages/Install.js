@@ -40,11 +40,15 @@ const premium = {
 function Install (props) {
   return (
     <div className='install'>
-      <img src={wallMountedTv} alt='Wall mounted TV' />
-      <h1>TV Install Packages</h1>
-      <BulletList content={basic} />
-      <BulletList content={advanced} />
-      <BulletList content={premium} />
+      <div className='install--img--container'>
+        <img className='install--img' src={wallMountedTv} alt='Wall mounted TV' />
+      </div>
+      <div className='install--package-container'>
+        <h1>TV Install Packages</h1>
+        <BulletList content={basic} />
+        <BulletList content={advanced} />
+        <BulletList content={premium} />
+      </div>
     </div>
   );
 }

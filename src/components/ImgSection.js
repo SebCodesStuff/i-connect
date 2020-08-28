@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React from 'react';
 import { paths } from '../constants/brandsPath';
 import Marantz from '../assets/brands/Marantz.jpg';
 import Jamo from '../assets/brands/Jamo.png';

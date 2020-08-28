@@ -4,6 +4,8 @@ import BulletList from '../components/BulletList';
 import CarouselComp from '../components/Carousel';
 import confused from '../assets/confused.jpg';
 import { images1, images2, images3 } from '../constants/carousels';
+import sonos from '../assets/certificates/sonos.jpg';
+import russound from '../assets/certificates/russound.jpg';
 
 const letUsShop = {
   title: 'Let us do the shopping for you',
@@ -51,14 +53,14 @@ const rates = {
 
 function Home() {
   return (
-    <div className="Home">
-      <p><p className='emphasize'>iConnect</p> offers a one stop complete solution for your electronic needs
+    <div className="home">
+      <h2 className='home--title'>
+        <strong className='emphasize'>iConnect</strong> offers a one stop complete solution for your electronic needs
+      </h2>
+      <h2 className='home--title'>
         We carry a wide range of popular brands at very competitive pricing.
-      </p>
+      </h2>
       <ImgSection />
-      <p><p className='emphasize'>iConnect</p> offers a one stop complete solution for your electronic needs
-        We carry a wide range of popular brands at very competitive pricing.
-      </p>
       <BulletList content={letUsShop} />
       <section>
         <h2>Call or text <a href="tel:647-955-8399">647-955-8399</a></h2>
@@ -83,6 +85,10 @@ function Home() {
       </section>
       <section>
         <h2>Certifications</h2>
+        <div className='cert-img-container'>
+          <img src={russound} alt='Russound certification' />
+          <img src={sonos} alt='Sonos certification' />
+        </div>
         <p>We accept Visa , Mastercard and American Express. <br/>Click below for payment</p>
         <p>Scarborough Home Theatre Services - Toronto Electronics Installations</p>
         <a href="tel:647-955-8399">647-955-8399</a>

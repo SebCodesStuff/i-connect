@@ -13,6 +13,9 @@ h1 {
   font-weight: 400;
   text-align: center; }
 
+h1, h2, h3, h4, h5 {
+  color: #fc0f13; }
+
 .email {
   text-decoration: underline;
   color: black; }
@@ -25,9 +28,30 @@ h1 {
   padding-bottom: 40px; }
 
 .background .header {
-  width: 60vw;
+  display: flex;
+  justify-content: center;
+  width: 100%;
   color: #fc0f13;
   background-color: #2d2c2a; }
+
+.background .header--container {
+  max-width: 700px; }
+
+.background .link--background {
+  display: flex;
+  justify-content: center;
+  position: sticky;
+  z-index: 1000;
+  top: 0;
+  width: 100%;
+  background-color: #2d2c2a; }
+
+.background .link--background .link--container {
+  display: flex;
+  justify-content: space-between;
+  margin: 40px 0 40px 0;
+  max-width: 700px;
+  width: 100%; }
 
 .header-number {
   color: #ffffff;
@@ -43,11 +67,6 @@ h1 {
   align-items: center;
   flex-direction: column;
   background-color: lightgrey; }
-
-.link-container {
-  display: flex;
-  justify-content: space-between;
-  margin: 20px 0 40px 0; }
 
 .links {
   color: #ffffff;
@@ -72,16 +91,81 @@ h1 {
   display: flex;
   justify-content: center; }
 
-.Home {
+.home {
   display: flex;
   align-items: center;
   flex-direction: column; }
+
+.home--title {
+  color: #382c2c;
+  font-size: 18px;
+  max-width: 800px;
+  text-align: center; }
+
+.home section {
+  text-align: center; }
+
+.home .bullet-list {
+  margin: 30px 0 30px 0;
+  display: flex;
+  flex-direction: column;
+  width: 90%; }
+
+.home .bullet-list h2 {
+  justify-content: center; }
+
+.home .bullet-list ul {
+  padding-top: 0; }
+
+.home .bullet-list ul li {
+  padding-top: 10px; }
+
+.home .cert-img-container {
+  display: flex;
+  justify-content: center; }
+
+.home .cert-img-container img {
+  height: 100px;
+  width: 100px;
+  margin-right: 20px; }
+
+.install {
+  display: flex;
+  justify-content: space-between; }
+
+.install--img--container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center; }
+
+.install--img {
+  width: 450px;
+  height: 300px; }
+
+.install----package-container {
+  display: flex;
+  flex-direction: column; }
+
+.install .bullet-list {
+  display: flex;
+  flex-direction: column;
+  width: 400px; }
+
+.install .bullet-list h2 {
+  justify-content: center; }
+
+.install .bullet-list ul {
+  padding-top: 0; }
+
+.install .bullet-list ul li {
+  padding-top: 10px; }
 
 .emphasize {
   color: #fc0f13;
   display: inline; }
 
 .ImgSection {
+  margin-top: 30px;
   display: flex;
   justify-content: center;
   width: 900px;
@@ -91,3 +175,6 @@ h1 {
 .ImgSection img {
   margin-right: 20px;
   object-fit: scale-down; }
+
+.carousel {
+  margin-top: 60px; }
