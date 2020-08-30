@@ -1,0 +1,30 @@
+.install {
+  display: flex;
+  justify-content: space-between; }
+
+.install--img--container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center; }
+
+.install--img {
+  width: 450px;
+  height: 300px; }
+
+.install----package-container {
+  display: flex;
+  flex-direction: column; }
+
+.install .bullet-list {
+  display: flex;
+  flex-direction: column;
+  width: 400px; }
+
+.install .bullet-list h2 {
+  justify-content: center; }
+
+.install .bullet-list ul {
+  padding-top: 0; }
+
+.install .bullet-list ul li {
+  padding-top: 10px; }

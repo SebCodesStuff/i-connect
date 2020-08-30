@@ -8,7 +8,7 @@ function Header () {
     return links.map(link => {
       const { title, url } = link;
       const active = pathname === url;
-      const activeClass = active ? '-active' : '';
+      const activeClass = active ? '__active' : '';
       return (
       <Link
         className={`links${activeClass}`}

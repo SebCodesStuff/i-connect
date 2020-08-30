@@ -1,0 +1,37 @@
+.install {
+  display: flex;
+  justify-content: space-between;
+  
+   &--img--container {
+     display: flex;
+     flex-direction: column;
+     justify-content: center;
+   }
+ 
+  &--img {
+    width: 450px;
+    height: 300px;
+  }
+ 
+  &----package-container {
+    display: flex;
+    flex-direction: column;
+  }
+ 
+   .bullet-list {
+     display: flex;
+     flex-direction: column;
+     width: 400px;
+ 
+     h2 {
+       justify-content: center;
+     }
+ 
+     ul {
+       padding-top: 0;
+       li {
+         padding-top: 10px;
+       }
+     }
+   }
+ }
