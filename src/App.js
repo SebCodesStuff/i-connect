@@ -19,8 +19,11 @@ function App () {
       <div className="background">
         <Header />
         <div className='container'>
-          <img className='logo' alt='iconnect logo' src={logo} />
-          <div className='overlay'>{overlayText}</div>
+          <div className='logo-container'>
+            <div className='overlay'>{overlayText}</div>
+          </div>
+          {/* <div className='overlay'>{overlayText}</div>
+          <img className='logo' alt='iconnect logo' src={logo} /> */}
           <Switch>
             <Route path="/tv-install-packages">
               <Install />

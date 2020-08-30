@@ -70,7 +70,7 @@ function Home() {
       <BulletList content={aLittleAboutUs} />
       <BulletList content={projectorInstall} />
       <CarouselComp images={images1} />
-      <section>
+      {/*<section>
         <h2>Troubleshooting/service call</h2>
         <p>Audio video,computer and wireless networking<br/>$149 for the first hour and $50 perhalf hour afterwards</p>
         <img src={confused} alt='confused about which wire does what'/>
@@ -95,7 +95,7 @@ function Home() {
         <a className="email" href="mailto: lu@iconnectht.com">lu@iconnectht.com</a>
       </section>
       {/* Secure Payments button */}
-      <CarouselComp images={images3} width={50}/>
+      {/* <CarouselComp images={images3} width={50}/> */}
     </div>
   );
 }
