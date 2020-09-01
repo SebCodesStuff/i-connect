@@ -6,8 +6,14 @@
   flex-wrap: wrap;
   background-color: #ffffff;
 
+  &--Jamo {
+    margin-top: 40px;
+    max-width: 300px;
+    width: 70%;
+  }
+
   img {
-    margin-right: 20px;
+    margin: 0 20px 0 20px;
     object-fit: scale-down;
   }
 }

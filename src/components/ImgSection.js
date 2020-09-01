@@ -14,7 +14,7 @@ function ImgSection() {
       </div>
       <p>More Brands Available</p>
       <img src={Marantz} alt='Marantz' />
-      <img src={Jamo} alt='Jamo' />
+      <img className='ImgSection--Jamo' src={Jamo} alt='Jamo' />
     </>
   );
 }

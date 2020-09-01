@@ -1,3 +1,5 @@
+@import '../mediaqueries.scss';
+
 .header {
   display: flex;
   justify-content: center;
@@ -7,6 +9,10 @@
 
   &--container {
     max-width: 700px;
+
+    h1 {
+      padding: 0 10px 0 10px;
+    }
 
     .header-number {
       color: #ffffff;
@@ -33,15 +39,28 @@
     display: flex;
     justify-content: space-between;
     margin: 40px 0 40px 0;
-    max-width: 700px;
     width:100%;
+    max-width: 700px;
+    text-align: center;
+
+    @include mobile {        
+      max-width: 80vw;
+    }
 
     .links {
       color: #ffffff;
       cursor: pointer;
       
+      @include mobile {        
+        font-size: 10px;
+      }
+      
       &__active {
         color: #fa0509;
+
+        @include mobile {        
+          font-size: 10px;
+        }
       }
       
       &:hover {

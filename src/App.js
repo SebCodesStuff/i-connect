@@ -10,7 +10,6 @@ import ContactUs from './pages/ContactUs';
 import Home from './pages/Home';
 import Install from './pages/Install';
 import Stereo from './pages/Stereo';
-import logo from './assets/iconnectLogo.jpeg'
 
 function App () {
   const overlayText = 'OVER 30 YEARS OF EXPERIENCE WITH EXCEPTIONAL SERVICE.'
@@ -22,8 +21,6 @@ function App () {
           <div className='logo-container'>
             <div className='overlay'>{overlayText}</div>
           </div>
-          {/* <div className='overlay'>{overlayText}</div>
-          <img className='logo' alt='iconnect logo' src={logo} /> */}
           <Switch>
             <Route path="/tv-install-packages">
               <Install />

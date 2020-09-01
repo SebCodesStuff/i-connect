@@ -1,0 +1,16 @@
+.ImgSection {
+  margin-top: 30px;
+  display: flex;
+  justify-content: center;
+  width: 80%;
+  flex-wrap: wrap;
+  background-color: #ffffff; }
+
+.ImgSection--Jamo {
+  margin-top: 40px;
+  max-width: 300px;
+  width: 70%; }
+
+.ImgSection img {
+  margin: 0 20px 0 20px;
+  object-fit: scale-down; }

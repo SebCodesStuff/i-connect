@@ -1,3 +1,9 @@
-.carousel {
+.carousel--container {
   margin-top: 60px;
+  max-width: 80vw;
+
+  .carousel {
+    display: flex;
+    justify-content: center;
+  }
 }

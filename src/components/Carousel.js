@@ -4,7 +4,7 @@ import "react-responsive-carousel/lib/styles/carousel.min.css";
 
 function CarouselComp ({ images, width = 80 }) {
   return (
-    <div className='carousel'>
+    <div className='carousel--container'>
       <Carousel 
         showArrows={true}
         dynamicHeight={true}
