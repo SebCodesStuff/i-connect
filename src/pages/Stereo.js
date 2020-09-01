@@ -16,10 +16,16 @@ const installation = {
 function Stereo (props) {
   return (
     <div className='stereo'>
-      <img src={stereo} alt='high end stereo' />
-      <BulletList content={installation} />
-      <h3>Call now to book and appointment!</h3>
-      <a href="tel:647-955-8399">647-955-8399</a>
+      <div className='stereo--img--container'>
+        <img className='stereo--img' src={stereo} alt='high end stereo' />
+      </div>
+      <div className='stereo--package-container'>
+        <BulletList content={installation} />
+        <div className='stereo--booking--container'>
+          <h3>Call now to book and appointment!</h3>
+          <a href="tel:647-955-8399">647-955-8399</a>
+        </div>
+      </div>
     </div>
   );
 }

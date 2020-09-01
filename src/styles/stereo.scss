@@ -1,0 +1,50 @@
+@import './mediaqueries.scss';
+
+
+.stereo {
+  display: flex;
+  width: 100%;
+  justify-content: space-evenly;
+
+
+  @include mobile {
+    flex-direction: column;
+  }
+  
+  &--img--container {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    @include mobile {
+      width: 100%;
+    }
+  }
+ 
+  &--img {
+    width: 90%;
+    max-width: 340px;
+    max-height: 440px;
+  }
+ 
+  &--package-container {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    @include mobile {
+      width: 100%;
+    }
+
+  }
+
+  &--booking--container {
+    @include mobile {
+      text-align: center;
+    }
+  }
+ }
+ 

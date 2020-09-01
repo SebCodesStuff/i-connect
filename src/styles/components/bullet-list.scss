@@ -1,7 +1,8 @@
+@import '../mediaqueries.scss';
+
 .bullet-list {
   display: flex;
   flex-direction: column;
-  width: 400px;
 
   h2 {
     justify-content: center;
