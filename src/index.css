@@ -97,6 +97,22 @@
   .stereo--booking--container {
     text-align: center; } }
 
+.contact-us h1 {
+  color: black;
+  text-align: left; }
+
+.contact-us--header {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 20px; }
+
+.contact-us--marker {
+  background-image: url("../assets/marker.png");
+  background-size: cover;
+  height: 43px;
+  width: 27px;
+  margin-top: -43px; }
+
 .header {
   display: flex;
   justify-content: center;
