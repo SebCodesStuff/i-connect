@@ -113,6 +113,9 @@
   width: 27px;
   margin-top: -43px; }
 
+.tv-calibration--img {
+  width: 80vw; }
+
 .header {
   display: flex;
   justify-content: center;

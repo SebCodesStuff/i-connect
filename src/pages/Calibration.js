@@ -3,9 +3,9 @@ import tvCalibration from '../assets/tvCalibration.jpg'
 
 function Calibration (props) {
   return (
-    <div>
+    <div className='tv-calibration'>
       <h1>TV Calibration $199.99</h1>
-      <img src={tvCalibration} alt='Tv being calibrated' />
+      <img className='tv-calibration--img' src={tvCalibration} alt='Tv being calibrated' />
     </div>
   );
 }

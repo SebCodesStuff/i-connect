@@ -1,0 +1,19 @@
+@import './mediaqueries.scss';
+
+.tv-calibration {
+  h1 {
+    color: black;
+
+    @include tablet {
+      font-size: 30px;
+    }
+
+    @include mobile {
+      font-size: 20px;
+    }
+  }
+
+  &--img {
+    width: 70vw;
+  }
+}
