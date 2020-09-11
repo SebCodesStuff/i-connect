@@ -51,14 +51,22 @@
     }
 
     .link--menu {
-      height: 25px;
-      width: 35px;
       margin-bottom: 10px;
       display: none;
 
       @include mobile {
         display: block;
       }
+    }
+
+    .link--menu.open {
+      height: 25px;
+      width: 25px;
+    }
+
+    .link--menu.closed {
+        height: 25px;
+        width: 35px;
     }
 
     .links {

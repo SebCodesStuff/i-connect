@@ -44,14 +44,20 @@
     margin: 20px 0 20px 0; } }
 
 .link--background .link--container .link--menu {
-  height: 25px;
-  width: 35px;
   margin-bottom: 10px;
   display: none; }
 
 @media screen and (max-width: 767px) {
   .link--background .link--container .link--menu {
     display: block; } }
+
+.link--background .link--container .link--menu.open {
+  height: 25px;
+  width: 25px; }
+
+.link--background .link--container .link--menu.closed {
+  height: 25px;
+  width: 35px; }
 
 .link--background .link--container .links {
   color: #ffffff;

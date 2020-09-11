@@ -1,0 +1,60 @@
+[debug] [2020-09-11T02:16:20.103Z] ----------------------------------------------------------------------
+[debug] [2020-09-11T02:16:20.106Z] Command:       /usr/local/bin/node /usr/local/bin/firebase deploy
+[debug] [2020-09-11T02:16:20.106Z] CLI Version:   8.9.2
+[debug] [2020-09-11T02:16:20.106Z] Platform:      darwin
+[debug] [2020-09-11T02:16:20.106Z] Node Version:  v10.16.3
+[debug] [2020-09-11T02:16:20.107Z] Time:          Thu Sep 10 2020 22:16:20 GMT-0400 (Eastern Daylight Time)
+[debug] [2020-09-11T02:16:20.107Z] ----------------------------------------------------------------------
+[debug] [2020-09-11T02:16:20.107Z] 
+[debug] [2020-09-11T02:16:20.122Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2020-09-11T02:16:20.122Z] > authorizing via signed-in user
+[debug] [2020-09-11T02:16:20.123Z] [iam] checking project iconnect-8e016 for permissions ["firebase.projects.get","firebasehosting.sites.update"]
+[debug] [2020-09-11T02:16:20.126Z] >>> HTTP REQUEST POST https://cloudresourcemanager.googleapis.com/v1/projects/iconnect-8e016:testIamPermissions  
+ {"permissions":["firebase.projects.get","firebasehosting.sites.update"]}
+[debug] [2020-09-11T02:16:20.413Z] <<< HTTP RESPONSE 200 {"content-type":"application/json; charset=UTF-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","date":"Fri, 11 Sep 2020 02:16:20 GMT","server":"ESF","cache-control":"private","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","server-timing":"gfet4t7; dur=180","alt-svc":"h3-29=\":443\"; ma=2592000,h3-27=\":443\"; ma=2592000,h3-T051=\":443\"; ma=2592000,h3-T050=\":443\"; ma=2592000,h3-Q050=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"","accept-ranges":"none","transfer-encoding":"chunked"}
+[debug] [2020-09-11T02:16:20.416Z] >>> HTTP REQUEST GET https://firebase.googleapis.com/v1beta1/projects/iconnect-8e016  
+ 
+[debug] [2020-09-11T02:16:20.615Z] <<< HTTP RESPONSE 200 {"content-type":"application/json; charset=UTF-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","date":"Fri, 11 Sep 2020 02:16:20 GMT","server":"ESF","cache-control":"private","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","alt-svc":"h3-29=\":443\"; ma=2592000,h3-27=\":443\"; ma=2592000,h3-T051=\":443\"; ma=2592000,h3-T050=\":443\"; ma=2592000,h3-Q050=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"","accept-ranges":"none","transfer-encoding":"chunked"}
+[info] 
+[info] === Deploying to 'iconnect-8e016'...
+[info] 
+[info] i  deploying hosting 
+[debug] [2020-09-11T02:16:20.623Z] >>> HTTP REQUEST POST https://firebasehosting.googleapis.com/v1beta1/sites/iconnect-8e016/versions  
+ {"config":{"rewrites":[{"glob":"**","path":"/index.html"}]},"labels":{"deployment-tool":"cli-firebase"}}
+[debug] [2020-09-11T02:16:21.790Z] <<< HTTP RESPONSE 200 {"content-type":"application/json; charset=UTF-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","date":"Fri, 11 Sep 2020 02:16:21 GMT","server":"ESF","cache-control":"private","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","alt-svc":"h3-29=\":443\"; ma=2592000,h3-27=\":443\"; ma=2592000,h3-T051=\":443\"; ma=2592000,h3-T050=\":443\"; ma=2592000,h3-Q050=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"","accept-ranges":"none","transfer-encoding":"chunked"}
+[info] i  hosting[iconnect-8e016]: beginning deploy... 
+[info] i  hosting[iconnect-8e016]: found 63 files in build 
+[debug] [2020-09-11T02:16:22.704Z] [hosting] hash cache [YnVpbGQ] stored for 63 files
+[debug] [2020-09-11T02:16:22.704Z] [hosting][hash queue][FINAL] {"max":869,"min":35,"avg":421.25396825396825,"active":0,"complete":63,"success":63,"errored":0,"retried":0,"total":63,"elapsed":886}
+[debug] [2020-09-11T02:16:22.704Z] >>> HTTP REQUEST POST https://firebasehosting.googleapis.com/v1beta1/sites/iconnect-8e016/versions/42832e2433edc70f:populateFiles  
+ <request body omitted>
+[debug] [2020-09-11T02:16:23.297Z] <<< HTTP RESPONSE 200 {"content-type":"application/json; charset=UTF-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","date":"Fri, 11 Sep 2020 02:16:23 GMT","server":"ESF","cache-control":"private","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","alt-svc":"h3-29=\":443\"; ma=2592000,h3-27=\":443\"; ma=2592000,h3-T051=\":443\"; ma=2592000,h3-T050=\":443\"; ma=2592000,h3-Q050=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"","accept-ranges":"none","transfer-encoding":"chunked"}
+[debug] [2020-09-11T02:16:23.307Z] [hosting][populate queue][FINAL] {"max":597,"min":597,"avg":597,"active":0,"complete":1,"success":1,"errored":0,"retried":0,"total":1,"elapsed":605}
+[debug] [2020-09-11T02:16:23.307Z] [hosting] uploads queued: 12
+[debug] [2020-09-11T02:16:24.338Z] [hosting][upload queue][FINAL] {"max":1040,"min":745,"avg":815.6666666666666,"active":0,"complete":12,"success":12,"errored":0,"retried":0,"total":12,"elapsed":1040}
+[info] ✔  hosting[iconnect-8e016]: file upload complete 
+[debug] [2020-09-11T02:16:24.340Z] [hosting] deploy completed after 2547ms
+[debug] [2020-09-11T02:16:24.414Z] [
+  {
+    "config": {
+      "public": "build",
+      "ignore": [
+        "firebase.json",
+        "**/.*",
+        "**/node_modules/**"
+      ],
+      "rewrites": [
+        {
+          "source": "**",
+          "destination": "/index.html"
+        }
+      ],
+      "site": "iconnect-8e016"
+    },
+    "site": "iconnect-8e016",
+    "version": "sites/iconnect-8e016/versions/42832e2433edc70f"
+  }
+]
+[info] i  hosting[iconnect-8e016]: finalizing version... 
+[debug] [2020-09-11T02:16:24.416Z] >>> HTTP REQUEST PATCH https://firebasehosting.googleapis.com/v1beta1/sites/iconnect-8e016/versions/42832e2433edc70f?updateMask=status  
+ {"status":"FINALIZED"}

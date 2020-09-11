@@ -2,6 +2,8 @@ import React, { useState } from 'react';
 import { links } from '../constants/links';
 import { Link, useLocation } from "react-router-dom";
 import hamburger from '../assets/hamburger.png'
+import close from '../assets/close.png'
+
 
 function Header () {
   const { pathname } = useLocation();
@@ -29,6 +31,9 @@ function Header () {
     setMenuOpen(!menuOpen)
   }
 
+  const menuIcon = menuOpen ? close : hamburger
+  const menuClass = menuOpen ? 'open' : 'closed';
+
   return (
     <>
       <div className="header">
@@ -40,7 +45,7 @@ function Header () {
       </div>
       <div className="link--background">
         <div className="link--container">
-          <img className="link--menu" alt="hamburger menu" src={hamburger} onClick={handleClick} />
+          <img className={`link--menu ${menuClass}`} alt="hamburger menu" src={menuIcon} onClick={handleClick} />
           {renderLinks(links)}
         </div>
       </div>

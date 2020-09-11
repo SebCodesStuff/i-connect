@@ -1,6 +1,8 @@
 import React from 'react';
 import GoogleMapReact from 'google-map-react';
 
+const mapsKey = process.env.REACT_APP_MAPS_KEY;
+
 function ContactUs (props) {
   const center = {
     lat: 43.7682271,
@@ -16,7 +18,7 @@ function ContactUs (props) {
       </div>
       <div style={{ height: '80vh', width: '70vw' }}>
         <GoogleMapReact
-          bootstrapURLKeys={{ key: 'AIzaSyDtDr4zdSSo3P_7lL30GJG3JjrW9hYUXl0' }}
+          bootstrapURLKeys={{ key: mapsKey }}
           defaultCenter={center}
           defaultZoom={16}
         >
