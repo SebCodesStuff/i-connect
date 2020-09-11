@@ -21,7 +21,7 @@
   "scripts": {
     "start-js": "react-scripts start",
     "start": "REACT_APP_MAPS_KEY=AIzaSyDtDr4zdSSo3P_7lL30GJG3JjrW9hYUXl0 npm-run-all -p watch-css start-js",
-    "build": "npm run build-css && react-scripts build",
+    "build": "REACT_APP_MAPS_KEY=AIzaSyDtDr4zdSSo3P_7lL30GJG3JjrW9hYUXl0 npm run build-css && react-scripts build",
     "build-css": "node-sass src/ -o src/",
     "watch-css": "npm run build-css && node-sass src/ -o src/ --watch --recursive",
     "test": "react-scripts test",
