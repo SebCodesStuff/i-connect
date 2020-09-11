@@ -297,6 +297,10 @@ h1, h2, h3, h4, h5 {
   background-color: lightgrey;
   padding-bottom: 40px; }
 
+@media screen and (max-width: 767px) {
+  .background .container {
+    width: 100vw; } }
+
 .background .container .logo-container {
   margin-bottom: 40px;
   display: flex;
