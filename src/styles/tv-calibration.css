@@ -1,0 +1,11 @@
+.tv-calibration h1 {
+  color: black; }
+  @media screen and (min-width: 768px) and (max-width: 1279px) {
+    .tv-calibration h1 {
+      font-size: 30px; } }
+  @media screen and (max-width: 767px) {
+    .tv-calibration h1 {
+      font-size: 20px; } }
+
+.tv-calibration--img {
+  width: 70vw; }

@@ -1,17 +1,21 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { links } from '../constants/links';
 import { Link, useLocation } from "react-router-dom";
+import hamburger from '../assets/hamburger.png'
 
 function Header () {
   const { pathname } = useLocation();
+  const [menuOpen, setMenuOpen] = useState(false);
+
   const renderLinks = (links) => {
     return links.map(link => {
       const { title, url } = link;
       const active = pathname === url;
       const activeClass = active ? '__active' : '';
+      const open = menuOpen ? '' : 'links__closed';
       return (
       <Link
-        className={`links${activeClass}`}
+        className={`links${activeClass} ${open}`}
         to={url}
         key={url}
       >
@@ -19,6 +23,10 @@ function Header () {
       </Link>
       );
     })
+  }
+
+  const handleClick = () => {
+    setMenuOpen(!menuOpen)
   }
 
   return (
@@ -32,6 +40,7 @@ function Header () {
       </div>
       <div className="link--background">
         <div className="link--container">
+          <img className="link--menu" alt="hamburger menu" src={hamburger} onClick={handleClick} />
           {renderLinks(links)}
         </div>
       </div>
