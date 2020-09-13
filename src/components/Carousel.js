@@ -2,7 +2,7 @@ import React from 'react';
 import { Carousel } from 'react-responsive-carousel';
 import "react-responsive-carousel/lib/styles/carousel.min.css";
 
-function CarouselComp ({ images, width = 80 }) {
+function CarouselComp ({ images, width = 80, autoPlay }) {
   return (
     <div className='carousel--container'>
       <Carousel 
@@ -13,6 +13,7 @@ function CarouselComp ({ images, width = 80 }) {
         thumbWidth={width}
         infiniteLoop={true}
         stopOnHover={true}
+        autoPlay={autoPlay}
       >
       {images.map(url => {
         const getAlt = url.split('.')[0]

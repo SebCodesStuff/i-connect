@@ -94,7 +94,6 @@ function Home() {
         <a href="tel:647-955-8399">647-955-8399</a>
         <a className="email" href="mailto: lu@iconnectht.com">lu@iconnectht.com</a>
       </section>
-      {/* Secure Payments button */}
       <CarouselComp images={images3} width={50}/>
     </div>
   );

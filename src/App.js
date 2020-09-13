@@ -10,6 +10,9 @@ import ContactUs from './pages/ContactUs';
 import Home from './pages/Home';
 import Install from './pages/Install';
 import Stereo from './pages/Stereo';
+import MenuBoard from './pages/MenuBoard';
+import Security from './pages/Security';
+
 
 function App () {
   const overlayText = 'OVER 30 YEARS OF EXPERIENCE WITH EXCEPTIONAL SERVICE.'
@@ -30,6 +33,12 @@ function App () {
             </Route>
             <Route path="/TV-CALIBRATION">
               <Calibration />
+            </Route>
+            <Route path="/menu-boards">
+              <MenuBoard />
+            </Route>
+            <Route path="/security">
+              <Security />
             </Route>
             <Route path="/contact-us">
               <ContactUs />

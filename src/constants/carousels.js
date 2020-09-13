@@ -36,6 +36,14 @@ import wall_mounts from '../assets/carousels/third/wall_mounts.jpg';
 import wall_speakers from '../assets/carousels/third/wall_speakers.jpg';
 import wall_speakers_finished from '../assets/carousels/third/wall_speakers_finished.jpg';
 
+import menu_off from '../assets/menuBoard/menu_off.jpg';
+import menu_closeup from '../assets/menuBoard/menu_closeup.jpg';
+import menu_room from '../assets/menuBoard/menu_room.jpg';
+
+import camera_closeup from '../assets/security/camera_closeup.jpg';
+import camera_grandma from '../assets/security/camera_grandma.jpg';
+import camera_installed from '../assets/security/camera_installed.jpg';
+
 export const images1 = [
   covered_speakers,
   home_theatre,
@@ -79,3 +87,15 @@ export const images3 = [
   wall_speakers,
   wall_speakers_finished,
 ];
+
+export const menuBoard = [
+  menu_off,
+  menu_room,
+  menu_closeup
+];
+
+export const security = [
+  camera_closeup,
+  camera_installed,
+  camera_grandma
+]

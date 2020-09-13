@@ -12,8 +12,12 @@ export const links = [
     url: '/home-stereo-set-up',
   },
   {
-    title: 'TV CALIBRATION',
-    url: '/TV-CALIBRATION',
+    title: 'MENU BOARDS',
+    url: '/menu-boards',
+  },
+  {
+    title: 'SECURITY',
+    url: '/security',
   },
   {
     title: 'CONTACT US',
